@@ -1,3 +1,5 @@
+# This Branch tests the implementation of HttpClientModule, introduced with Angular 4.3
+
 ![Angular2-Token](assets/angular2-token-logo.png)
 
 # Angular2-Token
@@ -33,7 +35,7 @@ The repository can be found [here](https://github.com/neroniaky/angular2-token-e
     @NgModule({
         imports: [
             BrowserModule,
-            HttpModule,
+            HttpClientModule,
             RouterModule
         ],
         declarations: [ AppComponent ],
@@ -63,7 +65,7 @@ Quickstart is currently in αlpha, please use with caution.
     @NgModule({
         imports: [
             BrowserModule,
-            HttpModule,
+            HttpClientModule,
             RouterModule,
             A2tUiModule
         ],
