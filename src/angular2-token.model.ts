@@ -1,4 +1,30 @@
+import { HttpHeaders, HttpParams } from '@angular/common/http';
+
 // Function Data
+
+export interface HttpOptions {
+   headers?: HttpHeaders | {
+       [header: string]: string | string[];
+   };
+   observe?: 'body' | 'events' | 'response';
+   params?: HttpParams | {
+       [param: string]: string | string[];
+   };
+   reportProgress?: boolean;
+   responseType?: 'arraybuffer' | 'blob' | 'json' | 'text';
+   withCredentials?: boolean;
+}
+
+export interface RequestHttpOptions  {
+   headers?: {
+       [header: string]: string | string[];
+   };
+   observe?: 'body' | 'events' | 'response';
+   params?: HttpParams;
+   reportProgress?: boolean;
+   responseType?: 'arraybuffer' | 'blob' | 'json' | 'text';
+   withCredentials?: boolean;
+}
 
 export interface SignInData {
     email:                  string;
